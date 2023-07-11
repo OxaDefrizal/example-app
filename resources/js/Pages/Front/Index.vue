@@ -58,7 +58,7 @@ const props = defineProps({
                 <img src="img/logo.png" class="h-10 mr-3" alt=" Logo" />
                 <span
                     class="self-center text-2xl text-gray-50 font-semibold whitespace-nowrap dark:text-dark"
-                    >Dosen AI</span
+                    >Mahasiswa</span
                 >
             </a>
             <div class="flex md:order-2">
@@ -312,7 +312,7 @@ const props = defineProps({
                         <img src="img/logo.png" class="h-8 mr-3" alt=" Logo" />
                         <span
                             class="self-center text-2xl font-semibold whitespace-nowrap dark:text-dark"
-                            >Dosen AI</span
+                            >Mahasiswa</span
                         >
                     </div>
                 </div>
