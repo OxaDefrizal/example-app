@@ -2,7 +2,7 @@
 import { Head, Link } from "@inertiajs/vue3";
 import { onMounted, ref } from "vue";
 import { LottieAnimation } from "lottie-web-vue";
-import WatermelonJSON from "/public/img/robot.json";
+import WatermelonJSON from "/public/img/animation.json";
 
 // Menginisialisasi variabel anim sebagai referensi Vue
 let anim = ref();
@@ -50,14 +50,14 @@ const props = defineProps({
 
 <template>
     <Head title="Welcome" />
-    <nav class="bg-white">
+    <nav class="bg-gray-900">
         <div
             class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
         >
             <a href="/" class="flex items-center">
-                <img src="img/logo_Web.png" class="h-8 mr-3" alt=" Logo" />
+                <img src="img/logo.png" class="h-10 mr-3" alt=" Logo" />
                 <span
-                    class="self-center text-2xl font-semibold whitespace-nowrap dark:text-dark"
+                    class="self-center text-2xl text-gray-50 font-semibold whitespace-nowrap dark:text-dark"
                     >Dosen AI</span
                 >
             </a>
@@ -66,7 +66,7 @@ const props = defineProps({
                     <button
                         v-if="$page.props.auth.user"
                         :href="route('dashboard')"
-                        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                        class="text-white bg-violet-700 hover:bg-violet-800 focus:ring-4 focus:outline-none focus:ring-violet-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-violet-600 dark:hover:bg-violet-700 dark:focus:ring-violet-800"
                     >
                         Dashboard
                     </button>
@@ -74,7 +74,7 @@ const props = defineProps({
                         <Link
                             :href="route('login')"
                             type="button"
-                            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                            class="text-white bg-violet-700 hover:bg-violet-800 focus:ring-4 focus:outline-none focus:ring-violet-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-violet-600 dark:hover:bg-violet-700 dark:focus:ring-violet-800"
                         >
                             Log in</Link
                         >
@@ -107,12 +107,12 @@ const props = defineProps({
             </div>
             <div class="hidden w-full md:block md:w-auto" id="navbar-default">
                 <ul
-                    class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 dark:border-gray-700"
+                    class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-grey-800 dark:bg-gray-900 dark:border-gray-700"
                 >
                     <li>
                         <a
                             href="#"
-                            class="block py-2 pl-3 pr-4 text-dark bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-dark md:dark:text-blue-500"
+                            class="block py-2 pl-3 pr-4 text-dark bg-violet-700 rounded md:bg-transparent md:text-violet-700 md:p-0 dark:text-dark md:dark:text-violet-500"
                             aria-current="page"
                             >Home</a
                         >
@@ -120,28 +120,28 @@ const props = defineProps({
                     <li>
                         <a
                             href="#about"
-                            class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-dark md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-dark md:dark:hover:bg-transparent"
+                            class="block py-2 pl-3 pr-4 text-gray-50 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-violet-700 md:p-0 dark:text-dark md:dark:hover:text-violet-500 dark:hover:bg-gray-700 dark:hover:text-dark md:dark:hover:bg-transparent"
                             >About</a
                         >
                     </li>
                     <li>
                         <a
                             href="#"
-                            class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-dark md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-dark md:dark:hover:bg-transparent"
+                            class="block py-2 pl-3 pr-4 text-gray-50 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-violet-700 md:p-0 dark:text-dark md:dark:hover:text-violet-500 dark:hover:bg-gray-700 dark:hover:text-dark md:dark:hover:bg-transparent"
                             >Services</a
                         >
                     </li>
                     <li>
                         <a
                             href="#"
-                            class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-dark md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-dark md:dark:hover:bg-transparent"
+                            class="block py-2 pl-3 pr-4 text-gray-50 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-violet-700 md:p-0 dark:text-dark md:dark:hover:text-violet-500 dark:hover:bg-gray-700 dark:hover:text-dark md:dark:hover:bg-transparent"
                             >Pricing</a
                         >
                     </li>
                     <li>
                         <a
                             href="#"
-                            class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-dark md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-dark md:dark:hover:bg-transparent"
+                            class="block py-2 pl-3 pr-4 text-gray-50 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-violet-700 md:p-0 dark:text-dark md:dark:hover:text-violet-500 dark:hover:bg-gray-700 dark:hover:text-dark md:dark:hover:bg-transparent"
                             >Contact</a
                         >
                     </li>
@@ -149,7 +149,7 @@ const props = defineProps({
             </div>
         </div>
     </nav>
-    <section class="bg-white dark:bg-gray-900">
+    <section class="bg-white dark:bg-gray-800">
         <div
             class="py-1 px-4 mx-auto max-w-screen-xl lg:py-16 grid lg:grid-cols-2 gap-12 lg:gap-16"
         >
@@ -169,7 +169,7 @@ const props = defineProps({
                 >
                     <a
                         href="#"
-                        class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900"
+                        class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-violet-700 hover:bg-violet-800 focus:ring-4 focus:ring-violet-300 dark:focus:ring-violet-900"
                     >
                         Get started
                         <svg
@@ -208,32 +208,32 @@ const props = defineProps({
             </div>
         </div>
     </section>
-    <section cclass="bg-grey-50" id="about">
+    <section cclass="bg-grey-50" class="bg-gray-900" id="about">
         <div
             class="mx-auto max-w-screen-xl container flex flex-col items-center py-16 md:py-20 lg:flex-row"
         >
             <div class="w-full text-center sm:w-3/4 lg:w-3/5 lg:text-left">
                 <h2
-                    class="font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl"
+                    class="font-header text-4xl font-semibold text-gray-50 uppercase text-primary sm:text-5xl lg:text-6xl"
                 >
                     Who am I?
                 </h2>
                 <h4
-                    class="pt-6 font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl"
+                    class="pt-6 font-header text-xl font-medium text-gray-50 sm:text-2xl lg:text-3xl"
                 >
                     {{ about.judul }}
                 </h4>
-                <p class="pt-6 font-body leading-relaxed text-grey-20">
+                <p class="pt-6 font-body leading-relaxed text-gray-50">
                     {{ about.konten }}
                 </p>
                 <div
-                    class="flex flex-col justify-center pt-6 sm:flex-row lg:justify-start"
+                    class="flex flex-col justify-center text-gray-50 pt-6 sm:flex-row lg:justify-start"
                 >
                     <div
-                        class="flex items-center justify-center sm:justify-start"
+                        class="flex items-center justify-center text-gray-50 sm:justify-start"
                     >
                         <a
-                            href="https://www.instagram.com/mujiyantosvc/"
+                            href="https://www.instagram.com/zalaxa_/"
                             class="font-body text-lg font-semibold uppercase text-grey-20"
                         >
                             Connect with me
@@ -279,11 +279,11 @@ const props = defineProps({
                 <div v-for="item in skill" :key="item.id">
                     <div class="flex items-end justify-between">
                         <h4
-                            class="font-body font-semibold uppercase text-black"
+                            class="font-body font-semibold uppercase text-gray-50"
                         >
                             {{ item.judul }}
                         </h4>
-                        <h3 class="font-body text-3xl font-bold text-primary">
+                        <h3 class="font-body text-3xl font-bold text-gray-50">
                             {{ item.konten }}%
                         </h3>
                     </div>
@@ -291,7 +291,7 @@ const props = defineProps({
                         class="mt-2 bg-lila w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700"
                     >
                         <div
-                            class="bg-blue-600 h-2.5 rounded-full"
+                            class="bg-violet-700 h-2.5 rounded-full"
                             style="width: {{item.konten}}%"
                         ></div>
                     </div>
@@ -299,8 +299,8 @@ const props = defineProps({
             </div>
         </div>
     </section>
-    <footer>
-        <div className="mx-auto max-w-screen-xl  px-4 sm:px-6">
+    <footer className="bg-gray-900">
+        <div className="mx-auto max-w-screen-xl  px-4 sm:px-6 ">
             <div
                 className="grid sm:grid-cols-12 gap-8 py-8 md:py-12 border-t border-gray-200"
             >
@@ -308,12 +308,8 @@ const props = defineProps({
                     <div className="mb-2">
                         <Logo />
                     </div>
-                    <div className="text-sm text-gray-600">
-                        <img
-                            src="img/logo_Web.png"
-                            class="h-8 mr-3"
-                            alt=" Logo"
-                        />
+                    <div className="text-sm text-gray-50">
+                        <img src="img/logo.png" class="h-8 mr-3" alt=" Logo" />
                         <span
                             class="self-center text-2xl font-semibold whitespace-nowrap dark:text-dark"
                             >Dosen AI</span
@@ -321,132 +317,128 @@ const props = defineProps({
                     </div>
                 </div>
                 <div className="sm:col-span-6 md:col-span-3 lg:col-span-2">
-                    <h6 className="text-gray-800 font-medium mb-2">Products</h6>
+                    <h6 className="text-gray-50 font-bold mb-2">Products</h6>
                     <ul className="text-sm">
                         <li className="mb-2">
                             <a
                                 href="#0"
-                                className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out"
+                                className="text-gray-50 hover:text-violet-700 transition duration-150 ease-in-out"
                                 >Web Studio</a
                             >
                         </li>
                         <li className="mb-2">
                             <a
                                 href="#0"
-                                className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out"
+                                className="text-gray-50 hover:text-violet-700 transition duration-150 ease-in-out"
                                 >DynamicBox Flex</a
                             >
                         </li>
                         <li className="mb-2">
                             <a
                                 href="#0"
-                                className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out"
+                                className="text-gray-50 hover:text-violet-700 transition duration-150 ease-in-out"
                                 >Programming Forms</a
                             >
                         </li>
                         <li className="mb-2">
                             <a
                                 href="#0"
-                                className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out"
+                                className="text-gray-50 hover:text-violet-700 transition duration-150 ease-in-out"
                                 >Integrations</a
                             >
                         </li>
                         <li className="mb-2">
                             <a
                                 href="#0"
-                                className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out"
+                                className="text-gray-50 hover:text-violet-700 transition duration-150 ease-in-out"
                                 >Command-line</a
                             >
                         </li>
                     </ul>
                 </div>
                 <div className="sm:col-span-6 md:col-span-3 lg:col-span-2">
-                    <h6 className="text-gray-800 font-medium mb-2">
-                        Resources
-                    </h6>
+                    <h6 className="text-gray-50 font-bold mb-2">Resources</h6>
                     <ul className="text-sm">
                         <li className="mb-2">
                             <a
                                 href="#0"
-                                className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out"
+                                className="text-gray-50 hover:text-violet-700 transition duration-150 ease-in-out"
                                 >Documentation</a
                             >
                         </li>
                         <li className="mb-2">
                             <a
                                 href="#0"
-                                className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out"
+                                className="text-gray-50 hover:text-violet-700 transition duration-150 ease-in-out"
                                 >Tutorials & Guides</a
                             >
                         </li>
                         <li className="mb-2">
                             <a
                                 href="#0"
-                                className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out"
+                                className="text-gray-50 hover:text-violet-700 transition duration-150 ease-in-out"
                                 >Blog</a
                             >
                         </li>
                         <li className="mb-2">
                             <a
                                 href="#0"
-                                className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out"
+                                className="text-gray-50 hover:text-violet-700 transition duration-150 ease-in-out"
                                 >Support Center</a
                             >
                         </li>
                         <li className="mb-2">
                             <a
                                 href="#0"
-                                className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out"
+                                className="text-gray-50 hover:text-violet-700 transition duration-150 ease-in-out"
                                 >Partners</a
                             >
                         </li>
                     </ul>
                 </div>
                 <div className="sm:col-span-6 md:col-span-3 lg:col-span-2">
-                    <h6 className="text-gray-800 font-medium mb-2">Company</h6>
+                    <h6 className="text-gray-50 font-bold mb-2">Company</h6>
                     <ul className="text-sm">
                         <li className="mb-2">
                             <a
                                 href="#0"
-                                className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out"
+                                className="text-gray-50 hover:text-gray-900 transition duration-150 ease-in-out"
                                 >Home</a
                             >
                         </li>
                         <li className="mb-2">
                             <a
                                 href="#0"
-                                className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out"
+                                className="text-gray-50 hover:text-violet-700 transition duration-150 ease-in-out"
                                 >About us</a
                             >
                         </li>
                         <li className="mb-2">
                             <a
                                 href="#0"
-                                className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out"
+                                className="text-gray-50 hover:text-violet-700 transition duration-150 ease-in-out"
                                 >Company values</a
                             >
                         </li>
                         <li className="mb-2">
                             <a
                                 href="#0"
-                                className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out"
+                                className="text-gray-50 hover:text-violet-700 transition duration-150 ease-in-out"
                                 >Pricing</a
                             >
                         </li>
                         <li className="mb-2">
                             <a
                                 href="#0"
-                                className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out"
+                                className="text-gray-50 hover:text-violet-700 transition duration-150 ease-in-out"
                                 >Privacy Policy</a
                             >
                         </li>
                     </ul>
                 </div>
                 <div className="sm:col-span-6 md:col-span-3 lg:col-span-3">
-                    <h6 className="text-gray-800 font-medium mb-2">
-                        Subscribe
-                    </h6>
-                    <p className="text-sm text-gray-600 mb-4">
+                    <h6 className="text-gray-50 font-medium mb-2">Subscribe</h6>
+                    <p className="text-sm text-gray-50 mb-4">
                         Get the latest news and articles to your inbox every
                         month.
                     </p>
@@ -478,7 +470,7 @@ const props = defineProps({
                                             aria-hidden="true"
                                         ></span>
                                         <svg
-                                            className="w-3 h-3 fill-current text-blue-600 mx-3 shrink-0"
+                                            className="w-3 h-3 fill-current text-violet-600 mx-3 shrink-0"
                                             viewBox="0 0 12 12"
                                             xmlns="http://www.w3.org/2000/svg"
                                         >
@@ -550,7 +542,7 @@ const props = defineProps({
                         </a>
                     </li>
                 </ul>
-                <div className="text-sm text-gray-600 mr-4">
+                <div className="text-sm text-gray-50 mr-4">
                     &copy; Amikom. All rights reserved.
                 </div>
             </div>
