@@ -68,3 +68,5 @@ This project is licensed under the Oxa Defrizal Khasay
 <h2>💖Like my work?</h2>
 
 if you like this project you can be full and can edit according to your wishes<p>https://github.com/OxaDefrizal/project-pemweb-final</p>
+
+if you want look this project you can click this link: https://zalaxa.domcloud.io/
