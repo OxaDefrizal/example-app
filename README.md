@@ -1,6 +1,6 @@
 <h1 align="center" id="title">Personal Web Project</h1>
 
-<p id="description">This is a personal web project where users can change the content according to the content that the user wants.</p>
+<p id="description">This is a my personal web oxa defrizal khasay 21.11.4388 project where users can change the content according to the content that the user wants.</p>
 
 <h2>Project Screenshots:</h2>
 
