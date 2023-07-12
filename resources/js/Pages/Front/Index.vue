@@ -55,7 +55,7 @@ const props = defineProps({
             class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
         >
             <a href="/" class="flex items-center">
-                <img src="img/logo.png" class="h-10 mr-3" alt=" Logo" />
+                <img src="img/logo.png" class="h-12 w-auto mr-3" alt=" Logo" />
                 <span
                     class="self-center text-2xl text-gray-50 font-semibold whitespace-nowrap dark:text-dark"
                     >Mahasiswa</span
@@ -63,13 +63,13 @@ const props = defineProps({
             </a>
             <div class="flex md:order-2">
                 <div v-if="canLogin">
-                    <button
+                    <a
                         v-if="$page.props.auth.user"
-                        :href="route('dashboard')"
+                        href="/dashboard"
                         class="text-white bg-violet-700 hover:bg-violet-800 focus:ring-4 focus:outline-none focus:ring-violet-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-violet-600 dark:hover:bg-violet-700 dark:focus:ring-violet-800"
                     >
                         Dashboard
-                    </button>
+                    </a>
                     <template v-else>
                         <Link
                             :href="route('login')"
@@ -107,7 +107,7 @@ const props = defineProps({
             </div>
             <div class="hidden w-full md:block md:w-auto" id="navbar-default">
                 <ul
-                    class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-grey-800 dark:bg-gray-900 dark:border-gray-700"
+                    class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-grey-800 dark:bg-gray-9    00 dark:border-gray-700"
                 >
                     <li>
                         <a
@@ -140,9 +140,9 @@ const props = defineProps({
                     </li>
                     <li>
                         <a
-                            href="#"
+                            href="https://wa.me/08112952256"
                             class="block py-2 pl-3 pr-4 text-gray-50 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-violet-700 md:p-0 dark:text-dark md:dark:hover:text-violet-500 dark:hover:bg-gray-700 dark:hover:text-dark md:dark:hover:bg-transparent"
-                            >Contact</a
+                            >Contact Me</a
                         >
                     </li>
                 </ul>
@@ -216,7 +216,7 @@ const props = defineProps({
                 <h2
                     class="font-header text-4xl font-semibold text-gray-50 uppercase text-primary sm:text-5xl lg:text-6xl"
                 >
-                    Who am I?
+                    About Me
                 </h2>
                 <h4
                     class="pt-6 font-header text-xl font-medium text-gray-50 sm:text-2xl lg:text-3xl"
