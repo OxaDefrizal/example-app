@@ -107,7 +107,7 @@ const props = defineProps({
             </div>
             <div class="hidden w-full md:block md:w-auto" id="navbar-default">
                 <ul
-                    class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-grey-800 dark:bg-gray-9    00 dark:border-gray-700"
+                    class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-grey-800 dark:bg-gray-900 dark:border-gray-700"
                 >
                     <li>
                         <a
@@ -456,13 +456,13 @@ const props = defineProps({
                                     <input
                                         id="newsletter"
                                         type="email"
-                                        className="form-input w-full text-gray-800 px-3 py-2 pr-12 text-sm"
+                                        className="form-input w-full text-gray-800 px-3 py-2 pr-12 text-sm rounded-xl"
                                         placeholder="Your email"
                                         required
                                     />
                                     <button
                                         type="submit"
-                                        className="absolute inset-0 left-auto"
+                                        className="absolute w-7 h-auto inset-0 left-auto"
                                         aria-label="Subscribe"
                                     >
                                         <span
@@ -470,14 +470,27 @@ const props = defineProps({
                                             aria-hidden="true"
                                         ></span>
                                         <svg
-                                            className="w-3 h-3 fill-current text-violet-600 mx-3 shrink-0"
-                                            viewBox="0 0 12 12"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
                                             xmlns="http://www.w3.org/2000/svg"
                                         >
-                                            <path
-                                                d="M11.707 5.293L7 .586 5.586 2l3 3H0v2h8.586l-3 3L7 11.414l4.707-4.707a1 1 0 000-1.414z"
-                                                fillRule="nonzero"
-                                            />
+                                            <g
+                                                id="SVGRepo_bgCarrier"
+                                                stroke-width="0"
+                                            ></g>
+                                            <g
+                                                id="SVGRepo_tracerCarrier"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            ></g>
+                                            <g id="SVGRepo_iconCarrier">
+                                                <path
+                                                    fill-rule="evenodd"
+                                                    clip-rule="evenodd"
+                                                    d="M13.4697 5.46967C13.7626 5.17678 14.2374 5.17678 14.5303 5.46967L20.5303 11.4697C20.8232 11.7626 20.8232 12.2374 20.5303 12.5303L14.5303 18.5303C14.2374 18.8232 13.7626 18.8232 13.4697 18.5303C13.1768 18.2374 13.1768 17.7626 13.4697 17.4697L18.1893 12.75H4C3.58579 12.75 3.25 12.4142 3.25 12C3.25 11.5858 3.58579 11.25 4 11.25H18.1893L13.4697 6.53033C13.1768 6.23744 13.1768 5.76256 13.4697 5.46967Z"
+                                                    fill="#1C274C"
+                                                ></path>
+                                            </g>
                                         </svg>
                                     </button>
                                 </div>
@@ -543,7 +556,7 @@ const props = defineProps({
                     </li>
                 </ul>
                 <div className="text-sm text-gray-50 mr-4">
-                    &copy; Amikom. All rights reserved.
+                    &copy; Oxa Defrizal Khasay. All rights reserved.
                 </div>
             </div>
         </div>
