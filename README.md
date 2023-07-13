@@ -71,4 +71,4 @@ if you like this project you can be full and can edit according to your wishes<p
 
 if you want look this project you can click this link: 
 
-https://zalaxa.domcloud.io/](http://zalaxa.southeastasia.cloudapp.azure.com/)http://zalaxa.southeastasia.cloudapp.azure.com/
+http://zalaxa.southeastasia.cloudapp.azure.com/
