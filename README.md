@@ -69,4 +69,6 @@ This project is licensed under the Oxa Defrizal Khasay
 
 if you like this project you can be full and can edit according to your wishes<p>https://github.com/OxaDefrizal/project-pemweb-final</p>
 
-if you want look this project you can click this link: https://zalaxa.domcloud.io/
+if you want look this project you can click this link: 
+
+https://zalaxa.domcloud.io/](http://zalaxa.southeastasia.cloudapp.azure.com/)http://zalaxa.southeastasia.cloudapp.azure.com/
